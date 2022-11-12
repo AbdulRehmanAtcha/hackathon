@@ -88,7 +88,6 @@ function SeeClass() {
                         <div className="batch">
                             <h2>Batch# {eachClass?.batch}</h2>
                         </div>
-                        <button>Attendence</button>
                     </div>
                 )
             )}
