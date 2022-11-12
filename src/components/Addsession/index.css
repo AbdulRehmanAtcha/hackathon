@@ -1,0 +1,45 @@
+body{
+    background-color: darkgreen;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.class-box{
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 7px;
+
+}
+.class-box form{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+.hori-box{
+    display: flex;
+    column-gap: 25px;
+}
+.hori-box input{
+    width: 200px;
+    height: 35px;
+}
+.single-box input{
+    height: 35px;
+    width: 430px;
+}
+.class-box form button{
+    width: 440px;
+    height: 38px;
+    background-color: rgb(21, 156, 21);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}

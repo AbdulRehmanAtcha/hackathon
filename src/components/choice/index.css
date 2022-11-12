@@ -1,0 +1,22 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(15, 65, 15);
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+}
+.choice button{
+    height: 45px;
+    width: 180px;
+    cursor: pointer;
+    background-color: rgb(15, 175, 15);
+    border: none;
+    color: aliceblue;
+    /* transition: margin 0.7s ease-in-out; */
+}

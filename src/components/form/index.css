@@ -1,0 +1,45 @@
+body{
+    background-color: darkgreen;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signin-box{
+    height: 350px;
+    width: 350px;
+    background-color: darkgrey;
+    border-radius: 10px;
+
+}
+.signin-box form{
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+}
+.signin-box form input{
+    height: 32px;
+    width: 75%;
+    border: 3px solid black;
+    outline: none;
+    transition: border 0.7s ease-in-out;
+}
+.signin-box form input:focus{
+    border: 3px solid rgb(13, 90, 13);
+}
+.signin-box form button{
+    height: 35px;
+    width: 78%;
+}
+.show{
+    display: block;
+    color: red;
+}
+.hide{
+    display: none;
+}

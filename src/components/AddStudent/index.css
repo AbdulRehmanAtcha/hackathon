@@ -1,0 +1,35 @@
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(21, 109, 21);
+}
+.student form{
+    background-color: aliceblue;
+    height: 500px;
+    width: 500px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.hori-box{
+    display: flex;
+    column-gap: 9px;
+}
+.hori-box input{
+    height: 35px;
+    width: 220px;
+}
+.single-box input{
+    height: 35px;
+    width: 460px;
+}
+.student form button{
+    width: 470px;
+    height: 40px;
+}

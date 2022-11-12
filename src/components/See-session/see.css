@@ -1,0 +1,32 @@
+*{
+    margin: 3px;
+    padding: 1px;
+}
+body{
+    background-color: rgb(13, 95, 6);
+}
+/* div{
+    background-color: blueviolet;
+} */
+.classes{
+    display: flex;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    /* justify-content: space-around; */
+}
+.class{
+    margin-left: 60px;
+    width: 350px;
+    height: auto;
+    min-height: 400px;
+    /* min-height: 349px; */
+    background-color: rgb(75, 72, 72);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+}
+.class button{
+    height: 35px;
+    width: 150px;
+}
