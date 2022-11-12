@@ -34,7 +34,8 @@ function Form() {
                 // ...
             })
             .catch((error) => {
-                alert("Not Successful");
+                // alert("Not Successful");
+                isError(true);
                 const errorCode = error.code;
                 const errorMessage = error.message;
             });
@@ -49,10 +50,10 @@ function Form() {
                         <div className={isError ? "error show" : "error hide"}>Invalid Email Or Password!</div>
                         <input type="email" placeholder='Email' onChange={(e)=>{
                             setEmail(e.target.value)
-                        }}/>
+                        }} required/>
                         <input type="password" placeholder='Password' onChange={(e)=>{
                             setPassword(e.target.value)
-                        }}/>
+                        }} required/>
                         <button type='submit'>Login</button>
                     </form>
                 </div>

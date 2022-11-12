@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap');
+body{
+    background-color: rgb(13, 80, 13);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.main-box{
+    width: 600px;
+    min-height: 400px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    /* justify-content: center; */
+    margin-top: 30px;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.main-box h2{
+    font-family: 'Arvo', serif;
+}
+.main-box h3{
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+.main-box form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.hori-box{
+    display: flex;
+    column-gap: 9px;
+}
+.hori-box input{
+    height: 35px;
+    width: 200px;
+}
+.single-box input{
+    width: 420px;
+    height: 35px;
+}
+select{
+    height: 35px;
+}
+.main-box form button{
+    height: 40px;
+}
+table{
+    border: 1px solid black;
+    margin-bottom: 30px;
+}
+table th, table td{
+    width: 170px;
+    height: 35px;
+    border: 1px solid black;
+}

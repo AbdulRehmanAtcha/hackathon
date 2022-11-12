@@ -2,7 +2,7 @@ import './index.css';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, serverTimestamp } from "firebase/firestore";
+import {getFirestore, collection, addDoc, getDocs, doc, onSnapshot, query, serverTimestamp, orderBy } from "firebase/firestore";
 
 
 
@@ -72,37 +72,37 @@ function AddSession() {
                     <div className="hori-box">
                         <input type="number" min="1" max="12" maxLength="2" placeholder='Class From' onChange={(e)=>{
                             setClassFrom(e.target.value)
-                        }}/>
+                        }} required/>
                         <input type="number" min="1" max="12" maxLength="2" placeholder='Class To' onChange={(e)=>{
                             setClassTo(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
                     <div className="single-box">
                         <input type="text" placeholder='Days Of Class With Spaces' onChange={(e)=>{
                             setClassDays(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
                     <div className="single-box">
                         <input type="text" placeholder="Teacher's Name" onChange={(e)=>{
                             setClasssTeacher(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
                     <div className="single-box">
                         <input type="text" placeholder="Section Name" onChange={(e)=>{
                             setClassSection(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
                     <div className="single-box">
                         <input type="text" placeholder="Course Name" onChange={(e)=>{
                             setCourseName(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
                     <div className="single-box">
                         <input type="text" placeholder="Batch Number" onChange={(e)=>{
                             setBatchName(e.target.value)
-                        }}/>
+                        }} required/>
                     </div>
-                    <button>ADD CLASS</button>
+                    <button type='submit'>ADD CLASS</button>
                 </form>
             </div>
         </body>
